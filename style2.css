@@ -1,0 +1,402 @@
+/* ==========================
+   General Styling
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#1e3a8a;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* ==========================
+   Banner
+========================== */
+
+.banner{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.banner-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.banner-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#ff9800;
+    color:white;
+    padding:15px 30px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e67e22;
+}
+
+/* ==========================
+   About
+========================== */
+
+.about{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.about p{
+    font-size:18px;
+}
+
+/* ==========================
+   Schedule
+========================== */
+
+.schedule{
+    padding:60px 8%;
+}
+
+.schedule h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ccc;
+    padding:15px;
+    text-align:center;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+table tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* ==========================
+   Event Cards
+========================== */
+
+.events{
+    padding:60px 8%;
+}
+
+.events h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.event-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.event-card h3{
+    margin:15px;
+}
+
+.event-card p{
+    margin:0 15px 20px;
+}
+
+/* ==========================
+   Registration Form
+========================== */
+
+.register{
+    padding:60px 8%;
+}
+
+.register h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+    border:2px solid #2563eb;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Organizing Committee
+========================== */
+
+.committee{
+    padding:60px 8%;
+}
+
+.committee h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:35px;
+}
+
+.committee-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.member{
+    background:white;
+    width:250px;
+    text-align:center;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.member:hover{
+    transform:scale(1.05);
+}
+
+.member h3{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background:#1e3a8a;
+    color:white;
+    padding:40px;
+}
+
+footer div{
+    margin:20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer ul li{
+    margin-bottom:10px;
+}
+
+footer ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+footer ul li a:hover{
+    color:#ffd700;
+}
+
+/* ==========================
+   Tablet View
+========================== */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.banner-content h1{
+    font-size:40px;
+}
+
+.event-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ==========================
+   Mobile View
+========================== */
+
+@media(max-width:768px){
+
+header{
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.banner{
+    height:400px;
+}
+
+.banner-content h1{
+    font-size:30px;
+}
+
+.banner-content p{
+    font-size:18px;
+}
+
+.event-grid{
+    grid-template-columns:1fr;
+}
+
+.committee-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+table{
+    font-size:14px;
+}
+
+footer{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
